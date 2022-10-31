@@ -558,6 +558,12 @@ line-height: 140%;
 color: #FFFFFF;
 margin: 10px 0 0 0;
 }
+.social-item{
+transition: all 0.5s ease;
+}
+.social-item:hover{
+    transform: scale(1.1);
+}
 .social-box{
     width: 26px;
     height: 26px;
@@ -627,4 +633,9 @@ font-weight: 400;
 font-size: 16px;
 line-height: 140%;
 color: #4B9200;
+transition: all 0.5s ease;
+}
+.submit-btn:hover{
+    background: #F9804B;
+    color: #EAF7FE;
 }
