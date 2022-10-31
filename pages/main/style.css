@@ -550,6 +550,11 @@ text-align: center;
 text-transform: uppercase;
 
 color: #FFFFFF;
+transition: all 0.5s ease;
+}
+.footer__button:hover{
+    background: linear-gradient(113.96deg, #FE9013 1.49%, #F9804B  101.44%);
+    color: #000000;
 }
 .social-link{
 display: flex;;
