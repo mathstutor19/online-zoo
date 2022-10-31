@@ -165,8 +165,6 @@ color: #F9804B;
 }
 .backstage__suptext {
     height: 42px;
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 130%;
@@ -179,11 +177,153 @@ color: #F9804B;
     color: #333B41;
 }
 .backstage__subtext {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     margin-top: 34px;
     color: #333B41;
+}
+
+/* Animals begin  */
+.animals {
+    position: relative;
+    padding-top: 40px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+.animals::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 292px;
+    height: 460px;
+    background: url(../../assets/images/palm_foto.png) no-repeat;
+}
+.animals::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 368px;
+    height: 275px;
+    background: url(../../assets/images/strelitziaone.png) no-repeat;
+}
+.animals__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 30px;
+position: relative;
+}
+.animals__wrapper::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 62px;
+    height: 62px;
+    transform: translate(-132%,-58%);
+    background: url(../../assets/icons/arrow_elips_2.png) no-repeat;
+transition: all .5s ease;
+}
+.animals__wrapper:hover::before{
+    transform: translate(-160%,-50%);
+}
+.animals__wrapper::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 62px;
+    height: 62px;
+    transform: translate(128%,-57%);
+    background: url(../../assets/icons/arrow_elips_1.png) no-repeat;
+    transition: all .5s ease;
+}
+.animals__wrapper:hover::after{
+    transform: translate(160%,-50%);
+}
+.animals__article {
+    max-width: 366px;
+    border-radius: 5px;
+    border: 2px solid #FA6F32;
+    transition: all 0.5s ease;
+    overflow: hidden;
+    position: relative;
+
+}
+.animals__article:hover .animals__hover{
+
+    bottom: 0;
+    z-index: 2;
+}
+.animals__article:hover .article__contect{
+display: none;
+}
+.animals__article:hover .animals__image{
+   transform: scale(1.35);
+    }
+.animals__hover{
+width: 100%;
+height: 100%;
+background-color: rgba(0, 0, 0, 0.3);
+position: absolute;
+bottom: 100%;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+transition: all 0.5s ease;
+}
+.animals__hover__name{
+font-size: 20px;
+color: white;
+}
+.animals__hover__place{
+    font-size: 20px;
+    color: white;
+    }
+.animals__image {
+    width: 100%;
+    transition: all 0.5s ease;
+}
+.article__contect {
+    padding: 1px 11px 14px 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.animals__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #000000;
+}
+.animals__place {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 120%;
+    color: #000000;
+}
+.animals__button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #FE9013;
+    border-radius: 25px;
+    width: 292px;
+    padding: 16px 0px ;
+    display: block;
+    margin: auto ;
+    margin-top: 75px;
+    transition: all 0.5s ease;
+    border: none;
+}
+.animals__button:hover{
+transform: translate(0px, -10px);
+width: 300px;
+color: #000000;
 }
