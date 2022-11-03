@@ -53,6 +53,9 @@ a {
     width: 100%;
 
 }
+.header__title{
+    display: none;
+}
 .header__logo {
     padding-right: 62px;
 }
