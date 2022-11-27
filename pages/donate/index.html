@@ -1,154 +1,325 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Online-zoo</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
-        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
-    <link rel="stylesheet" href="../../assets/styles/normalize.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+      integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../../assets/styles/normalize.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
+  <body>
     <header class="header">
-        <div class="container header__wrapper">
-            <h1 class="header__title">PetStory online</h1>
-            <a href="../main/index.html">
-                <img class="header__logo" src="../../assets/images/logo.png" alt="header__logo">
-            </a>
-            <nav class="header__nav">
-                <ul class="nav__links">
-                    <li class="nav__items"><a class="nav__link header__active" href="../main/index.html">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Map
-                        </a>
-                    </li>
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Zoos
-                        </a>
-                    </li>
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Donate
-                        </a>
-                    </li>
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
-                <a class="nav__link copyright__item"
-                    href="https://www.figma.com/file/jfEFwkXVj1WRq7sUHDr8os/PetStory-online">Designed
-                    by
-                    &copy;</a>
-            </nav>
+      <div class="container header__wrapper">
+        <h1 class="header__title">PetStory online</h1>
+        <a href="../main/index.html">
+          <img
+            class="header__logo"
+            src="../../assets/images/logo.png"
+            alt="header__logo"
+          />
+        </a>
+        <nav>
+          <ul class="navigation">
+            <li class="navigation__item">
+              <a href="../../pages/main" class="navigation__item_link">About</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__item_link">Map</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__item_link">Zoos</a>
+            </li>
+            <li class="navigation__item">
+              <a
+                href="../../pages/donate"
+                class="active-link navigation__item_link"
+                >Donate</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__item_link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="figma__link">
+          <a
+            href="https://www.figma.com/file/ypzT9idgAILaSRVRmDAJxn/online-zoo-3-weeks"
+            target="_blank"
+            class="navigation__item_link"
+            >Designed by ©</a
+          >
         </div>
+      </div>
     </header>
     <main>
-        <section class="watch">
-            <div class="container watch__wrapper">
-                <div class="watch__content ">
-                    <div class="watch__elipse"></div>
-                    <h1 class="watch__title">Watch your <span>favorite</span>
-                        animal online</h1>
-                    <button class="watch__button">watсh online</button>
-                </div>
+      <section class="watch"></section>
+      <section class="donate">
+        <div class="content">
+          <div class="title">
+            THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!
+          </div>
+          <div class="subtitle">
+            Even though the Zoo has been able to reopen, we are at a greatly
+            reduced capacity with educational programs and public and private
+            events cancelled or postponed for additional months. We need you now
+            more than ever to help ensure that we overcome these challenges. We
+            have been actively raising funds in the community, and we are
+            grateful for the generosity. But much more support is still needed,
+            and we need your help! Please consider a gift today – no matter what
+            size – to help us sustain our mission.
+          </div>
+          <div class="title-2">Donation Information</div>
+          <div class="card">
+            <div class="card__title">Pick and feed a friend</div>
+            <div class="card__subtitle">
+              We know the animals bring you joy, and in these extraordinary
+              times, we’re glad.
             </div>
-        </section>
-        <section class="zoo">
-            <h2 class="zoo__title">THE ZOO HAS OFFICIALLY REOPENED BUT WE STILL NEED YOUR HELP!</h2>
-        </section>
+            <div class="amount-animals">
+              <div class="amount-block">
+                <div class="amount-block__amount">4</div>
+                <div class="amount-block__title">Panda diet for the day.</div>
+              </div>
+              <div class="multiply"></div>
+              <div class="animals">
+                <img src="../../assets/images/panda_icon.svg" alt="panda" />
+              </div>
+            </div>
+            <div class="text">Amount</div>
+            <div class="range">
+              <div class="progress-bar"></div>
+            </div>
+            <form>
+              <div class="price-form">
+                <label class="price"
+                  >$5000
+                  <input
+                    id="one"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="one"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price"
+                  >$2000
+                  <input
+                    id="two"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="two"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price active-price"
+                  >$1000
+                  <input
+                    id="three"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="three"
+                    checked="checked"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price"
+                  >$500
+                  <input
+                    id="four"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="four"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price"
+                  >$250
+                  <input
+                    id="five"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="five"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price"
+                  >$100
+                  <input
+                    id="six"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="six"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price"
+                  >$50
+                  <input
+                    id="seven"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="seven"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+                <label class="price"
+                  >$25
+                  <input
+                    id="eight"
+                    class="custom-radio"
+                    type="radio"
+                    name="radios"
+                    value="eight"
+                  />
+                  <span class="checkmark"></span>
+                </label>
+              </div>
 
+              <label class="another-amount">
+                <input
+                  id="number"
+                  type="number"
+                  placeholder="Another amount"
+                  min="0"
+                  max="9999"
+                  maxlength="4"
+                  oninput="if (value.length > 4) value = value.slice(0,4)"
+                />
+                <span class="symbol-dollar">$</span>
+              </label>
 
+              <div class="note">
+                <label class="radiobutton">
+                  <input
+                    id="monthly"
+                    type="radio"
+                    name="number of payments"
+                    value="Monthly"
+                  />
+                  <span class="note__checkmark"></span>
+                  Monthly
+                </label>
+                <label class="radiobutton">
+                  <input
+                    id="once"
+                    type="radio"
+                    value="Once"
+                    name="number of payments"
+                    checked="checked"
+                  />
+                  <span class="note__checkmark"></span>
+                  Once
+                </label>
+              </div>
+
+              <button type="submit" class="button">
+                <div class="button__text">Feed a friend now</div>
+              </button>
+            </form>
+            <p class="share">Share with your friends on social networks</p>
+          </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
-        <div class="container footer__wrapper">
-            <div class="footer__left">
-                <a href="../main/index.html" class="footer__logo">
-                    <img src="../../assets/images/logo.png" alt="bamboo" />
-
-                </a>
-                <a href="../donate/index.html" class="footer__button">Donate for volunteers</a>
-                <ul class="social-list">
-                    <li class="social-item">
-                        <a href="https://www.facebook.com/" class="social-link">
-                            <div class="social-box">
-                                <span class="fab fa-facebook-f"></span>
-                            </div>
-                            <p>Facebook</p>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://www.twitter.com/" class="social-link">
-                            <div class="social-box">
-                                <span class="fab fa-twitter"></span>
-                            </div>
-                            <p>Twitter</p>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://www.instagram.com/" class="social-link">
-                            <div class="social-box">
-                                <span class="fab fa-instagram"></span>
-                            </div>
-                            <p>Instagram</p>
-                        </a>
-                    </li>
-                    <li class="social-item">
-                        <a href="https://www.youtube.com/" class="social-link">
-                            <div class="social-box">
-                                <span class="fab fa-youtube"></span>
-                            </div>
-                            <p>Youtube</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <nav class="footer__nav">
-                <ul class="nav__links">
-                    <li class="nav__items"><a class="nav__link header__active" href="../main/index.html">
-                            About
-                        </a>
-                    </li>
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Map
-                        </a>
-                    </li>
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Zoos
-                        </a>
-                    </li>
-
-                    <li class="nav__items"><a class="nav__link" href="#">
-                            Contact us
-                        </a>
-                    </li>
-                </ul>
-
-
-
-
-            </nav>
-            <div class="footer__right">
-                <div class="subscription">
-                    <h3 class="footer__right__title">Subscribe to our news</h3>
-                    <form class="footer__form">
-                        <input class="footer__input" type="email" placeholder="Enter your email" required>
-                        <button class="submit-btn" type="submit">Submit</button>
-                    </form>
+      <div class="container footer__wrapper">
+        <div class="footer__left">
+          <a href="../main/index.html" class="footer__logo">
+            <img src="../../assets/images/logo.png" alt="bamboo" />
+          </a>
+          <a href="../donate/index.html" class="footer__button"
+            >Donate for volunteers</a
+          >
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://www.facebook.com/" class="social-link">
+                <div class="social-box">
+                  <span class="fab fa-facebook-f"></span>
                 </div>
-                <div class="footer__author">
-                    <p class="footer__designer">Designed by Alisa Samborskaya</p>
-                    <p>&copy; RSSchool &amp; &copy;Yem Digital 2021</p>
+                <p class="social__text">Facebook</p>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.twitter.com/" class="social-link">
+                <div class="social-box">
+                  <span class="fab fa-twitter"></span>
                 </div>
-            </div>
+                <p class="social__text">Twitter</p>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.instagram.com/" class="social-link">
+                <div class="social-box">
+                  <span class="fab fa-instagram"></span>
+                </div>
+                <p class="social__text">Instagram</p>
+              </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.youtube.com/" class="social-link">
+                <div class="social-box">
+                  <span class="fab fa-youtube"></span>
+                </div>
+                <p class="social__text">Youtube</p>
+              </a>
+            </li>
+          </ul>
         </div>
+        <nav class="footer__nav">
+          <ul class="navigation">
+            <li class="footer__navigation__item">
+              <a
+                href="../../pages/main"
+                class="navigation__item_link active-link"
+                >About</a
+              >
+            </li>
+            <li class="footer__navigation__item">
+              <a href="#" class="navigation__item_link">Map</a>
+            </li>
+            <li class="footer__navigation__item">
+              <a href="#" class="navigation__item_link">Zoos</a>
+            </li>
+            <li class="footer__navigation__item">
+              <a href="#" class="navigation__item_link">Contact us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__right">
+          <div class="subscription">
+            <h3 class="footer__right__title">Subscribe to our news</h3>
+            <form class="footer__form">
+              <input
+                class="footer__input"
+                type="email"
+                placeholder="Enter your email"
+                required
+              />
+              <button class="submit-btn" type="submit">Submit</button>
+            </form>
+          </div>
+          <div class="footer__author">
+            <p class="footer__designer">Designed by Alisa Samborskaya</p>
+            <p>&copy; RSSchool &amp; &copy;Yem Digital 2021</p>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
+    <script src="donate.js"></script>
+  </body>
 </html>
